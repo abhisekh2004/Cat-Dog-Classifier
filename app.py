@@ -27,7 +27,7 @@ def load_model():
             return x
 
     model.fc = Dc_model()  # Replace the last layer
-    model.load_state_dict(torch.load("cat_dog_best.pth", map_location=device))  # Load your trained weights
+    model.load_state_dict(torch.load("Model/cat_dog_best.pth", map_location=device))  # Load your trained weights
     model.eval()  # Set to evaluation mode
     model.to(device)
     return model
