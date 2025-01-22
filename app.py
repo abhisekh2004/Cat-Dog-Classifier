@@ -60,7 +60,13 @@ def main():
     if uploaded_file is not None:
         # Display uploaded image
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Image', use_container_width=True)
+        # Resize the image to fixed dimensions (e.g., 300x300)
+        fixed_size = (300, 300)
+        resized_image = image.resize(fixed_size)
+        
+        # Display the resized image
+        st.image(resized_image, caption="Uploaded Image (Resized)", use_container_width=False)
+        
 
         # Preprocess Image
         st.write("Processing image...")
@@ -70,7 +76,6 @@ def main():
         model = load_model()
 
         # Make Prediction
-        st.write("Classifying...")
         class_names = ["Cat", "Dog"]
         predicted_class, confidence = predict_image(model, image_tensor)
 
