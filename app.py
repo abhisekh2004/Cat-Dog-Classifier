@@ -61,7 +61,7 @@ def main():
         # Display uploaded image
         image = Image.open(uploaded_file)
         # Resize the image to fixed dimensions (e.g., 300x300)
-        fixed_size = (500,500)
+        fixed_size = (500,300)
         resized_image = image.resize(fixed_size)
         
         # Display the resized image
