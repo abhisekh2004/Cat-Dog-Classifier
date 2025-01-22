@@ -1,0 +1,6 @@
+torch==2.0.1                # For PyTorch
+torchvision==0.15.2         # For torchvision models and transforms
+pillow==9.4.0               # For image handling
+numpy==1.24.2               # For numerical computations
+matplotlib==3.7.1           # For plotting (if needed in the app)
+streamlit==1.25.0           # For building and deploying the Streamlit app
