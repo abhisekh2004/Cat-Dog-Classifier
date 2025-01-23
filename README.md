@@ -13,7 +13,7 @@ Welcome to the **Cat-Dog Classifier**! This project utilizes **ResNet18** with *
 
 ## 📸 **Demo**
 
-[Streamlit App Demo] ![image](https://github.com/user-attachments/assets/f4ee9a02-1da2-4a7d-9aef-05a5764a27e5)
+**[Streamlit App Demo](https://github.com/abhisekh2004)** ![image](https://github.com/user-attachments/assets/f4ee9a02-1da2-4a7d-9aef-05a5764a27e5)
 
 
 ---
